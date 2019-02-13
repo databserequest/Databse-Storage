@@ -1,21 +1,22 @@
 echo "Example program of Functions"
-
-a=2
-b=4
-add()
+a=4
+b=2
+add ()
 {
 	result=`expr $a + $b`
 }
-mul()
+mul ()
 {
-	result=`expr $a *\ $b`
+	result1=`expr $a \* $b`
 }
-div()
+div ()
 {
-	result=`expr $a / $b`
+	result2=`expr $a / $b`
 }
-
+add
+mul
+div
 echo "Addition of a and b is: " $result
-echo "Multiplication of a and b is: " $result
-echo "Dision of a and b is: " $result
+echo "Multiplication of a and b is: " $result1
+echo "Divison of a and b is: " $result2
 
